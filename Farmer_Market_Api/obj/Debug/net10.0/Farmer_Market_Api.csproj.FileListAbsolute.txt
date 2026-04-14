@@ -95,3 +95,4 @@ C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\re
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.pdb
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.genruntimeconfig.cache
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\ref\Farmer_Market_Api.dll
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.sourcelink.json

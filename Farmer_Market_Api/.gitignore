@@ -1,0 +1,63 @@
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache files
+.vs/
+.vscode/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+# Uncomment if you don’t want to commit package binaries
+# *.dll
+# *.exe
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Test results
+TestResult.xml
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish output
+publish/
+*.pubxml
+*.publishproj
+
+# Resharper / Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Azure Functions local settings
+local.settings.json
+
+# Entity Framework migrations snapshot
+Migrations/
+
+# JetBrains Rider
+.idea/
+
+# Others
+*.dbmdl
+*.jfm
