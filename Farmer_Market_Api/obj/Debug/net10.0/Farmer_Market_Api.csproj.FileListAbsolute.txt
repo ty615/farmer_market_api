@@ -96,3 +96,10 @@ C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Fa
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.genruntimeconfig.cache
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\ref\Farmer_Market_Api.dll
 C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.sourcelink.json
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.csproj.AssemblyReference.cache
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_Market_Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Tyrique Prince\farmer_market_api\Farmer_Market_Api\obj\Debug\net10.0\Farmer_M.8C8CD9AA.Up2Date
