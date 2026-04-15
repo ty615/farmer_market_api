@@ -2,36 +2,41 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Farmer_Market_Api.Models;
+using Farmers_Market_API.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Farmer_Market_Api.Controllers
+namespace Farmers_Market_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class FarmerController : ControllerBase
     {
-        private List<string>farmers = new List<string> {"Kobus","Tyrique","Zandre"};
+        private readonly List<Farmer> farmers = new List<Farmer> { 
+            new Farmer("Kobus", "kobus@example.com", "123-456-7890", "Location A", "Province A", 4.5, true), 
+            new Farmer("Tyrique", "tyrique@example.com", "098-765-4321", "Location B", "Province B", 4.0, true), 
+            new Farmer("Zandre", "zandre@example.com", "555-555-5555", "Location C", "Province C", 4.8, true) 
+            };
+
         [HttpGet]
-        public List <string> GetListofFarmers()
+        public List<Farmer> GetListOfFarmers()
         {
             return farmers;
         }
 
         [HttpPost]
-        public List<string> createFarmer([FromBody]string name)
+        public List<Farmer> CreateFarmer([FromBody] Farmer farmer)
         {
-         farmers.Add(name);
-         return farmers;
+            farmers.Add(farmer);
+            return farmers;
         }
 
         [HttpDelete]
-
-        public List<string> Delete([FromQuery] string name)
+        public List<Farmer> Delete([FromQuery] int farmerId)
         {
-            if (farmers.Contains(name))
+            var farmer = farmers.FirstOrDefault(f => f.GetFarmerId() == farmerId);
+            if (farmer != null)
             {
-                farmers.Remove(name);
+                farmers.Remove(farmer);
                 return farmers;
             }
             else
@@ -39,24 +44,20 @@ namespace Farmer_Market_Api.Controllers
                 return farmers;
             }
         }
-        
-        [HttpPut]
 
-        public List<string> updateFarmers([FromBody]UpdateRequest request)
-        {
-            if (farmers.Contains(request.OldName))
-            {
-                var index = farmers.IndexOf(request.OldName);
-                farmers[index] = request.NewName;
-                return farmers;
-            }
-            else
-            {
-                return farmers;
-            }
-            
-                
-            
-        }
-    }
+        // [HttpPut]
+        // public List<Farmer> UpdateFarmers([FromBody] UpdateRequest request)
+        // {
+        //     if (farmers.Contains(request.OldName))
+        //     {
+        //         var index = farmers.IndexOf(request.OldName);
+        //         farmers[index] = request.NewName;
+        //         return farmers;
+        //     }
+        //     else
+        //     {
+        //         return farmers;
+        //     }
+        // }
+     }
 }
